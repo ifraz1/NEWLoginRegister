@@ -1,9 +1,8 @@
 <?php
     require("password.php");
 
-    $con = mysqli_connect("my_host", "my_user", "my_password", "my_database");
-    
-    $username = $_POST["username"];
+    $con = mysqli_connect("mysql.hostinger.co.uk", "u705317343_fit", "Mohammedifraz123", "u705317343_fit");
+    u705317343_fit    $username = $_POST["username"];
     $password = $_POST["password"];
     
     $statement = mysqli_prepare($con, "SELECT * FROM user WHERE username = ?");
